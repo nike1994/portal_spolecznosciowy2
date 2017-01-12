@@ -1,0 +1,269 @@
+/*
+ rgb(214, 235, 228);
+ rgb(229,239,238);
+ rgb(213,204,223);
+ rgb(175,150,207);
+ rgb(135,184,189);
+*/
+
+body{
+  overflow: hidden;
+  background-color:  rgb(214, 235, 228);
+}
+
+div.header{
+  position: absolute;
+  top:0;
+  width: 100vw;
+  height: 25vh;
+  background-color: rgba(135,184,189,0.3);
+  display: table;
+  text-align: center;
+}
+div.header::after{
+  content: "";
+  background-image: url("../imgs/tło.png");
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+div.header>h1{
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+}
+
+div.container{
+  position: absolute;
+  top:25vh;
+  width: 100vw;
+  height: 75vh;
+}
+
+div.error{
+  position: absolute;
+  margin: auto;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+}
+
+div.error>p{
+  color: red;
+}
+
+div.form-box{
+  background-color:   rgb(213,204,223);
+  width: 500px;
+  height: 370px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+}
+
+div.login{
+  background-color: rgb(175,150,207);
+  padding: 5px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-align: center;
+}
+
+div.login>p{
+  font-family: 'Aladin', sans-serif;
+  font-size: 25px;
+}
+
+div.triangle-top-left{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+}
+div.triangle-top-left::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 200px solid  rgb(135,184,189);
+  border-right: 200px solid transparent;
+  position: absolute;
+  top: 0;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+div.triangle-top-left:hover::after{
+  border-top: 200px solid  rgb(135,184,189) ;
+  border-right: 200px solid transparent;
+}
+div.triangle-top-left:hover::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 170px solid  rgb(213,204,223);
+  border-right: 170px solid transparent;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  left: 0;
+  bottom: 15px;
+  margin: auto;
+}
+
+div.triangle-top-left>a,div.triangle-top-left>p{
+  text-decoration: none;
+  position: relative;
+  top:20px;
+  margin: 10px;
+  font-family: 'Aladin', sans-serif;
+  font-size: 25px;
+  color: black;
+}
+
+div.triangle-bottom-right{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  bottom:0;
+  right: 0;
+  text-align: right;
+}
+
+div.triangle-bottom-right::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 200px solid  rgb(135,184,189);
+  border-left: 200px solid transparent;
+  position: absolute;
+  top: 0;
+  width: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+}
+
+div.triangle-bottom-right:hover::after{
+  border-bottom: 200px solid  rgb(135,184,189) ;
+  border-left: 200px solid transparent;
+}
+div.triangle-bottom-right:hover::before{
+  content: "";
+  width: 0;
+  height: 0;
+  border-bottom: 170px solid  rgb(213,204,223);
+  border-left: 170px solid transparent;
+  position: absolute;
+  top: 17px;
+  right: 0;
+  left: 3px;
+  bottom: 0;
+  margin: auto;
+}
+
+div.triangle-bottom-right>p,div.triangle-bottom-right>a{
+  text-decoration: none;
+  position: relative;
+  top:120px;
+  margin: 10px;
+  font-family: 'Aladin', sans-serif;
+  font-size: 25px;
+  color: black;
+  right: 20px;
+}
+
+div.form{
+  text-align: center;
+}
+
+div.form>form>input{
+  border: none;
+  border-radius: 10px;
+  width: 70%;
+  height: 30px;
+  margin: 15px;
+}
+
+form>input[type="submit"]{
+  background-color:  rgb(135,184,189);
+  width: 50%;
+  height: 50px;
+  font-family: 'Aladin', sans-serif;
+  font-size: 20px;
+}
+
+form>input[type="submit"]:active{
+  background-color:  rgb(175,150,207);
+}
+
+
+div.registration_form-box{
+  background-color:   rgb(213,204,223);
+  width: 700px;
+  height: 370px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 20px;
+  text-align: center;
+}
+
+div.registration_form>form input{
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    margin: 15px;
+}
+
+div.registration_form> form label{
+  margin: 20px;
+  margin-right: 70px;
+}
+
+div.registration_form>form div{
+  width: 480px;
+  text-align: center;
+}
+div.registration_form div.about{
+  position: absolute;
+  top:110px;
+  right: 30px;
+  width: 200px;
+}
+
+div.registration_form div.about>textarea{
+  height: 30px;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  margin: 15px;
+}
+
+div.registration_form>form div.date{
+  position: absolute;
+  width: 200px;
+  top: 190px;
+  right: 30px;
+}
+
+div.registration_form input[type="submit"]{
+  position: absolute;
+  top : 290px;
+  right: 0px;
+}

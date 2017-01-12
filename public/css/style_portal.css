@@ -1,0 +1,389 @@
+body{
+  overflow: hidden;
+  background-color:  rgb(214, 235, 228);
+  margin: 0;
+}
+
+div.header{
+  width: 100%;
+  height: 40vh;
+  position: absolute;
+  top:0;
+}
+
+div.header>a{
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  background-color:  rgb(175,150,207);
+  border: 5px solid #fff;
+  padding: 10px;
+  font-family: 'Aladin', sans-serif;
+  font-size: 18px;
+  top:18vh;
+}
+
+#ulubieni{
+  margin-left: 5vw;
+}
+#galeria{
+  margin-left: 18vw;
+}
+
+#post{
+  margin-left: 30vw;
+}
+
+#global_tab{
+  right: 0;
+  margin-right: 20vw;
+}
+#wyloguj{
+  right: 0;
+  margin-right: 5vw;
+}
+
+#ulubieni:hover{
+  background: green;
+}
+#galeria:hover{
+  background: orange;
+}
+#post:hover{
+  background: violet;
+}
+#global_tab:hover{
+  background: blue;
+}
+#wyloguj:hover{
+  background: red;
+}
+div.header>div.background{
+  width: 100%;
+  height: 75%;
+  position: absolute;
+  top:0;
+  border-bottom: 10px solid #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.header>div.profile{
+  width: 19vh;
+  height: 19vh;
+  position: absolute;
+  top: 18vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px solid #fff;
+  border-radius: 50%;
+}
+
+div.container{
+  width: 100%;
+  height: 55vh;
+  position: absolute;
+  bottom: 0;
+}
+
+div.container>div.dane{
+  background-color: white;
+  border: 5px solid  rgb(135,184,189);
+  width: 25%;
+  height: 80%;
+  border-radius: 20px;
+  position: absolute;
+  margin: 50px;
+  bottom: 0;
+  top:0;
+  overflow-y: scroll;
+}
+
+div.container>div.dane>div{
+  width: 90%;
+  margin: auto;
+  border-bottom: 5px solid  rgb(214, 235, 228);
+}
+div.container>div.post_box{
+  background-color: white;
+  border: 5px solid  rgb(213,204,223);
+  width: 50%;
+  height: 80%;
+  border-radius: 20px;
+  position: absolute;
+  margin: 50px;
+  bottom: 0;
+  top:0;
+  right: 0;
+  overflow-y: scroll;
+}
+div.post_box a{
+ text-decoration: underline;
+}
+
+div.posts{
+  background-color:  rgb(229,239,238);
+  width: 90%;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 20px;
+  padding: 5px;
+  text-align: center;
+}
+
+div.posts>div.photo{
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+div.posts>p.name{
+  position: relative;
+}
+
+div.posts>p.date{
+  text-align: right;
+}
+
+div.posts>p.text{
+  margin-top: 50px;
+}
+
+div.posts>div.comments{
+  background-color: white;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+div.posts>div.comments>div{
+  border-bottom: 5px  solid  rgb(135,184,189);
+}
+
+div.posts>div.comments>div>div{
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+div.posts>div.comments>div>p{
+  position: relative;
+  left: 150px;
+  width: 80%;
+}
+div.posts>div.comments>div>a{
+  position: relative;
+  left: 150px;
+  width: 80%;
+}
+
+div.photo_box{
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 55vh;
+  overflow-y: scroll;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+
+div.photo_box>div.photos{
+  background-color: white;
+  border: 5px solid  rgb(175,150,207);
+  width: 300px;
+  height: 500px;
+  float: left;
+  margin: 10px;
+  overflow-y: scroll;
+}
+
+div.photo_box>div.photos>div.photo{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+}
+
+div.photos>div.comments{
+  background-color: rgb(213,204,223);
+  width: 95%;
+  margin: auto;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+div.photos>div.comments>div{
+  border-bottom: 5px  solid  rgb(135,184,189);
+}
+
+div.photos>div.comments>div>div{
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  float: left;
+}
+
+div.photos>div.comments>div>p{
+  position: relative;
+  width: 80%;
+  left: 10px;
+}
+
+div.fav_box{
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+  height: 55vh;
+  overflow-y: scroll;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+
+div.fav_box>div.favourite{
+  background-color: white;
+  border: 5px solid  rgb(175,150,207);
+  width: 300px;
+  height: 500px;
+  float: left;
+  margin: 10px;
+  overflow-y: scroll;
+}
+
+div.fav_box>div.favourite>div.photo{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: auto;
+}
+
+div.fav_box>div.favourite>a{
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  background-color:  rgb(175,150,207);
+  padding: 10px;
+  font-family: 'Aladin', sans-serif;
+  font-size: 18px;
+  top:18vh;
+  margin: auto;
+  display: block;
+  width: 150px;
+  text-align: center;
+}
+
+div.container>div.dane>div.buttons{
+  height: 100px;
+  display: table;
+  border-collapse:separate;
+  border-spacing:15px;
+}
+
+div.container>div.dane>div.buttons>a.button{
+  position: relative;
+  width: 40%;
+  background-color:  rgb(175,150,207);
+  padding: 10px;
+  font-family: 'Aladin', sans-serif;
+  color: white;
+  border: 5px solid  rgb(214, 235, 228);
+  text-align: center;
+  display: table-cell;
+  vertical-align:middle;
+  text-decoration: none;
+}
+
+div.container>div.dane>div.buttons>a.button:hover{
+  background-color: rgb(213,204,223);
+  color: black;
+}
+
+div.addpostbackground, div.addcommentsbackground{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+div.addpost, div.addcomments{
+  position:absolute;
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border: 5px solid rgb(135,184,189);
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  z-index: 99;
+}
+
+#submitaddpost, #submitaddpostcomments, #submitaddphotocomments, #submitaddphoto{
+  position: absolute;
+  width: 40%;
+  background-color:  rgb(175,150,207);
+  padding: 10px;
+  font-family: 'Aladin', sans-serif;
+  color: white;
+  border: 5px solid  rgb(214, 235, 228);
+  text-align: center;
+  display: table-cell;
+  vertical-align:middle;
+  text-decoration: none;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+div.addpost input[type="submit"],div.addcomments input[type="submit"]{
+  width: 70%;
+}
+
+div.addpost textarea,div.addcomments textarea{
+  width: 70%;
+  height: 30%;
+}
+
+#photo{
+  position: absolute;
+  width: 200px;
+  background-color:  rgb(214, 235, 228);
+  padding: 10px;
+  font-family: 'Aladin', sans-serif;
+  color: black;
+  border: 5px solid rgb(175,150,207);
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+  top:35vh;
+  right: 15vw;
+}
+
+#photo:hover{
+    background-color:  rgb(135,184,189);
+}
+
+#preview{
+  width: 100px;
+  height: 100px;
+}
